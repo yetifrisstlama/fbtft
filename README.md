@@ -9,6 +9,15 @@ Because the world clearly needs __another__ fork of `fbtft` ;)
     tree
   * Add `fb_ssd1322.c` from Ryan Press. Compiles but not tested yet.
 
+# Adding it to the linux kernel
+```bash
+$ cd linux/drivers/staging
+$ rm -rf fbtft
+$ git clone https://github.com/yetifrisstlama/fbtft.git
+```
+Then do a `make menuconfig` and enable it under:
+
+Device drivers, Staging drivers, Support for small TFT LCD display modules
 
   FBTFT
 =========
